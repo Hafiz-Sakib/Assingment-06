@@ -3,6 +3,33 @@
 .body {
   font-family: "Poppins", sans-serif;
 }
+/* Navigation Styles Start */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.main-header {
+  margin-left: 120px;
+}
+.navigation a {
+  text-decoration: none;
+  color: black;
+  padding-left: 25px;
+}
+.navigation {
+  margin-top: 25px;
+  margin-right: 120px;
+}
+.fa-search,
+.fa-shopping-cart {
+  width: 24px;
+  height: 24px;
+  font-size: 20px;
+}
+#aus {
+  padding-right: 100px;
+}
+/* Navigation Styles End */
 .head-img {
   width: 40%;
   margin-left: 500px;
@@ -12,7 +39,12 @@
 .col {
   margin-bottom: 50px;
 }
-
+#detail-img {
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* Media Query */
 @media only screen and (max-width: 688px) {
   .head-img {
