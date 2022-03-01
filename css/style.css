@@ -1,13 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500&family=Poppins:wght@500&display=swap");
 
 .body {
-  /* background-color: red; */
   font-family: "Poppins", sans-serif;
 }
-
 .head-img {
   width: 40%;
   margin-left: 500px;
   margin-top: 50px;
   margin-bottom: 20px;
+}
+.col {
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 688px) {
+  .head-img {
+    width: 400px;
+    margin-left: 10px;
+  }
 }
