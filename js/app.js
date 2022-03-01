@@ -27,7 +27,7 @@ const displayPhones = (phones) => {
   const first20Phones = phones.slice(0, 20);
   const main = document.getElementById("main");
   for (const phone of first20Phones) {
-    console.log(phone);
+    // console.log(phone);
     const newDiv = document.createElement("div");
     newDiv.classList.add("col");
     newDiv.innerHTML = `
@@ -36,9 +36,18 @@ const displayPhones = (phones) => {
       <div class="card-body">
         <h4 class="card-title text-danger fw-bolder"> ${phone.phone_name}</h4>
         <p class="card-text">Brand: ${phone.brand}</p>
-        <button onclick = "phoneDetails()" class="btn btn-success" type="submit" id='details'>Details</button>
+        <button onclick = "phoneDetails('${phone.slug}')" class="btn btn-success" type="submit" id='details'>Details</button>
       </div>
       `;
     main.appendChild(newDiv);
   }
+};
+
+const phoneDetails = (uniqeDetails) => {
+  fetch(`https://openapi.programming-hero.com/api/phone/${uniqeDetails}`)
+    .then((res) => res.json())
+    .then((data) => showDetails(data.data));
+};
+const showDetails = (data) => {
+  console.log(data);
 };
