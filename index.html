@@ -23,7 +23,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="body">
     <!-- Head Image -->
 
     <img src="images/head-image.jpg" alt="" class="head-img" />
@@ -39,7 +39,7 @@
         aria-describedby="button-addon2"
       />
       <button
-        class="btn btn-outline-secondary text-success"
+        class="btn btn-outline-secondary text-success fs-4"
         id="search-btn"
         onclick="searchPhone()"
         type="button"
@@ -50,6 +50,13 @@
     </div>
 
     <!-- SearchBox Ended -->
+
+    <h2 id="error" class="text-center text-danger mt-5"></h2>
+    <div
+      class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4"
+      id="main"
+    ></div>
+
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
