@@ -3,12 +3,12 @@
 .body {
   font-family: "Poppins", sans-serif;
 }
-
 .head-img {
-  width: 40%;
-  margin-left: 450px;
-  margin-top: 200px;
-  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  width: 50%;
 }
 #spinner {
   margin-left: 600px;
@@ -44,21 +44,11 @@
 }
 /* Media Query */
 @media only screen and (max-width: 688px) {
-  .head-img {
-    width: 400px;
-    margin-left: 10px;
-  }
   .main-header {
     margin-left: 40px;
     color: #26a9e0;
   }
   #spinner {
     margin-left: 70px;
-  }
-}
-/* Media Queries For Tablet Devices Strated  */
-@media only screen and (min-width: 689px) and (max-width: 991px) {
-  .head-img {
-    margin-left: 250px;
   }
 }
