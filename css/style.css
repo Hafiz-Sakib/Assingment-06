@@ -56,3 +56,9 @@
     margin-left: 70px;
   }
 }
+/* Media Queries For Tablet Devices Strated  */
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+  .head-img {
+    margin-left: 250px;
+  }
+}

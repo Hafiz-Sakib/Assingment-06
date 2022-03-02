@@ -27,7 +27,17 @@ const searchPhone = () => {
     searchInput.value = "";
     main.innerHTML = ``;
     detailCard.textContent = "";
-  } else {
+  }
+  // fetch(
+  //   `https://openapi.programming-hero.com/api/phones?search=${searchInputValue}`
+  // )
+  //   .then((res) => res.json())
+  //   .then((data) => console.log(data));
+
+  // else if(searchInputValue.toLowerCase() === ("${data.brand}").toLowerCase()){
+
+  // }
+  else {
     //Clear Previous Data
     main.innerHTML = ``;
     detailCard.textContent = "";
