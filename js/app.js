@@ -117,7 +117,6 @@ const showDetails = (data) => {
       <tr>
           <td class = "fw-bolder text-danger">More Specifications:</td>
       </tr>
-      
       <tr>
       <td>Wifi & Networks:</td>
       <td>${data.others?.WLAN}</td>
