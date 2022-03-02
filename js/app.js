@@ -76,7 +76,9 @@ const showDetails = (data) => {
 
   div.innerHTML = `
   <div class="card";">
-  <img src="${data.image}" class="card-img-top rounded" id ="detail-img" alt="...">
+  <img src="${
+    data.image
+  }" class="card-img-top rounded" id ="detail-img" alt="...">
   <h5 class="card-title text-info text-center bg-white"></h5>
   <div class="card-body">
 
@@ -89,9 +91,9 @@ const showDetails = (data) => {
           <td>${data.brand}</td>
       </tr>
       <tr>
-          <td>First Release Date:</td>
-          <td>${data.releaseDate}</td>
-      </tr>
+            <td>First Release Date:</td>
+             <td>${data.releaseDate ? data.releaseDate : "Not Avalible"}</td>
+       </tr>
 
       <tr>
           <td >Display:</td>
@@ -117,30 +119,30 @@ const showDetails = (data) => {
       </tr>
       
       <tr>
-          <td>Wifi & Networks:</td>
-          <td>${data.others.WLAN}</td>
-      </tr>
-      
-      <tr>
-          <td>Bluetooth:</td>
-          <td>${data.others.Bluetooth}</td>
-      </tr>
-      
-      <tr>
-          <td>GPS:</td>
-          <td>${data.others.GPS}</td>
-      </tr>
-      
-      <tr>
-          <td>NFC:</td>
-          <td>${data.others.NFC}</td>
-      </tr>
-      
-      <tr>
-          <td>Radio:</td>
-          <td>${data.others.USB}</td>
-      </tr>
-  </tbody>
+      <td>Wifi & Networks:</td>
+      <td>${data.others?.WLAN}</td>
+  </tr>
+  
+  <tr>
+      <td>Bluetooth:</td>
+      <td>${data.others?.Bluetooth}</td>
+  </tr>
+  
+  <tr>
+      <td>GPS:</td>
+      <td>${data.others?.GPS}</td>
+  </tr>
+  
+  <tr>
+      <td>NFC:</td>
+      <td>${data.others?.NFC}</td>
+  </tr>
+  
+  <tr>
+      <td>Radio:</td>
+      <td>${data.others?.USB}</td>
+  </tr>
+</tbody>
 </table>
 
 </div>
