@@ -1,10 +1,19 @@
+// function for display Spinner
+
+const toggleSpinner = (displayStyle) => {
+  document.getElementById("spinner").style.display = displayStyle;
+};
+
 const searchPhone = () => {
   const searchInput = document.getElementById("search-input");
+  //Display Spinner
+  toggleSpinner("block");
   const searchInputValue = searchInput.value;
   const error = document.getElementById("error");
   const detailCard = document.getElementById("detail-card");
   if (searchInputValue == "") {
     error.innerText = "Please,Enter The Phone Name That You Searching For ☹️";
+    toggleSpinner("none");
 
     //Clear Previous Data
     searchInput.value = "";
@@ -12,6 +21,7 @@ const searchPhone = () => {
     detailCard.textContent = "";
   } else if (searchInputValue < 0 || searchInputValue > 0) {
     error.innerText = "Enter The Model Name That You Searching For 🤔";
+    toggleSpinner("none");
 
     //Clear Previous Data
     searchInput.value = "";
@@ -50,6 +60,7 @@ const displayPhones = (phones) => {
         `;
     main.appendChild(newDiv);
   }
+  toggleSpinner("none");
 };
 
 const phoneDetails = (uniqeDetails) => {
