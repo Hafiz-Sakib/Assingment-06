@@ -26,19 +26,34 @@
   <body class="body">
           <!-- Header start -->
     <header>
-        <!-- Navigation Part Started -->
-        <nav>
-          <div class="main-header"><h2>িুরপুমিকরসুবপ</h2></div>
-          <div class="navigation">
-              <a href="https://www.amazon.com/ref=nav_logo"target="_blank">Home</a>
-              <a href="https://tinyurl.com/yckkvpsm"target="_blank">Buy Now</a>
-              <a href="https://tinyurl.com/4xexwdc4"target="_blank">Sign Up</a>
-              <a id="aus" href="https://www.aboutamazon.com/"target="_blank">About Us</a> 
-            <i class="fas fa-search"></i>
-            <i class="fas fa-shopping-cart"></i>
+    <!-- Navigation Part Started -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between fixed-top">
+          <div class="container">
+            <a class="navbar-brand fw-bold" href="#"><span class="text-primary">Phone </span>Specifications</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 ps-5 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Buy Now</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Add to Cart          </i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                </li>
+            </div>
           </div>
         </nav>
-    <!-- Head Image -->
+  </header>
+  <!-- .........................Navigation Part Ended ...................................-->
+        <!-- Head Image -->
 
     <img src="images/head-image.jpg" alt="" class="head-img" />
 
@@ -52,15 +67,8 @@
         aria-label="Recipient's username"
         aria-describedby="button-addon2"
       />
-      <button
-        class="btn btn-outline-secondary text-success fs-4"
-        id="search-btn"
-        onclick="searchPhone()"
-        type="button"
-        id="button-addon2"
-      >
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </button>
+      <button class="btn btn-outline-success" type="submit" id="search-btn"
+      onclick="searchPhone()">Search  <i class="fa-solid fa-magnifying-glass"></i></button>
     </div>
 
     <!-- SearchBox Ended -->
@@ -82,6 +90,24 @@
       class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4"
       id="main"
     ></div>
+
+      <!-- Footer started -->
+      <footer>
+        <section class="last-section">
+          <div class="copyright">
+            <div class="info-owner">
+                <p>All Rights reserved By © <a href="https://www.facebook.com/Sakib1056"target="_blank">Mohammad Hafizur Rahman Sakib</a> ©</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/Sakib1056"target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/s_a_k_i_b_1056"target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href=https://www.linkedin.com/in/hafiz-sakib-96b8b3229/ target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Hafiz-Sakib"target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </section>
+       </footer>
+       <!-- Footer Ended -->
 
     <!-- Bootstrap JavaScript Libraries -->
     <script
