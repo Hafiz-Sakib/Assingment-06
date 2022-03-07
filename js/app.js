@@ -11,7 +11,7 @@ const searchPhone = () => {
   const searchInputValue = searchInput.value;
   const error = document.getElementById("error");
   const detailCard = document.getElementById("detail-card");
-  if (searchInputValue == "") {
+  if (searchInputValue === "") {
     error.innerText = "Please,Enter The Phone Name That You Searching For ☹️";
     toggleSpinner("none");
 
@@ -44,6 +44,9 @@ const searchPhone = () => {
 
 //Display Phone Function
 const displayPhones = (phones) => {
+  if (phones.length == 0) {
+    error.innerText = "Please,Enter a Valid Gadget Name 🚫";
+  }
   const first20Phones = phones.slice(0, 20);
   const main = document.getElementById("main");
   for (const phone of first20Phones) {
@@ -119,27 +122,39 @@ const showDetails = (data) => {
       </tr>
       <tr>
       <td>Wifi & Networks:</td>
-      <td>${data.others?.WLAN}</td>
+      <td>${
+        data.others?.WLAN ? data.others.WLAN : " No Information Provided ❗"
+      }</td>
   </tr>
   
   <tr>
       <td>Bluetooth:</td>
-      <td>${data.others?.Bluetooth}</td>
+      <td>${
+        data.others?.Bluetooth
+          ? data.others.Bluetooth
+          : " No Information Provided ❗"
+      }</td>
   </tr>
   
   <tr>
       <td>GPS:</td>
-      <td>${data.others?.GPS}</td>
+      <td>${
+        data.others?.GPS ? data.others.GPS : " No Information Provided ❗"
+      }</td>
   </tr>
   
   <tr>
       <td>NFC:</td>
-      <td>${data.others?.NFC}</td>
+      <td>${
+        data.others?.NFC ? data.others.NFC : " No Information Provided ❗"
+      }</td>
   </tr>
   
   <tr>
       <td>Radio:</td>
-      <td>${data.others?.USB}</td>
+      <td>${
+        data.others?.USB ? data.others.USB : " No Information Provided ❗"
+      }</td>
   </tr>
 </tbody>
 </table>
